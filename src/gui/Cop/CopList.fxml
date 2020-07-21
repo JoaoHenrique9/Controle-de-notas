@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="255.0" prefWidth="1061.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Cop.CopListController">
+   <children>
+      <Label text="Comunicação de Ocorrência com ADM.  Pessoal">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <padding>
+            <Insets left="5.0" top="5.0" />
+         </padding>
+      </Label>
+      <ToolBar>
+        <items>
+          <Button fx:id="btNew" mnemonicParsing="false" onAction="#onBtNewAction" text="Novo" />
+        </items>
+      </ToolBar>
+      <TableView fx:id="tableViewCop" prefHeight="195.0" prefWidth="1100.0">
+        <columns>
+            <TableColumn fx:id="tableColumnNumeroCop" prefWidth="79.0" text="Numero Cop" />
+            <TableColumn fx:id="tableColumnData" text="Data" />
+          <TableColumn fx:id="tableColumnHora" prefWidth="60.0" text="Hora" />
+            <TableColumn fx:id="tableColumnAcesso" prefWidth="60.0" text="Acesso" />
+            <TableColumn fx:id="tableColumnMatricula" prefWidth="75.0" text="Matricula" />
+            <TableColumn fx:id="tableColumnFuncionario" prefWidth="120.0" text="Funcionario" />
+            <TableColumn fx:id="tableColumnSetor" minWidth="0.0" text="Setor" />
+            <TableColumn fx:id="tableColumnResponsavel" text="Supervisor" />
+            <TableColumn fx:id="tableColumnMotivo" prefWidth="110.0" text="Motivo" />
+            <TableColumn fx:id="tableColumnPorteiro" text="porteiro" />
+            <TableColumn fx:id="tableColumnEDIT" prefWidth="70.0" />
+            <TableColumn fx:id="tableColumnREMOVE" prefWidth="70.0" />
+        </columns>
+      </TableView>
+   </children>
+</VBox>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.VBox?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="569.0" prefWidth="1067.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.MainViewController">
+   <content>
+      <VBox prefHeight="552.0" prefWidth="1021.0">
+         <children>
+            <MenuBar>
+              <menus>
+                  <Menu mnemonicParsing="false" text="Recebimento de Mercadoria">
+                     <items>
+                        <MenuItem fx:id="menuItemMercadoriaCadastro" mnemonicParsing="false" onAction="#onMenuItemControleNotasRegisterAction" text="Cadastro" />
+                        <MenuItem fx:id="menuItemMercadoriaConsulta" mnemonicParsing="false" onAction="#onMenuItemControleNotasQueryAction" text="Consultar" />
+                     </items>
+                  </Menu>
+                <Menu mnemonicParsing="false" text="COP">
+                     <items>
+                        <MenuItem fx:id="menuItemCopCadastro" mnemonicParsing="false" onAction="#onMenuItemCopRegisterAction" text="Cadastrar" />
+                      <MenuItem fx:id="menuItemCopConsulta" mnemonicParsing="false" onAction="#onMenuItemCopQueryAction" text="Consultar" />
+                     </items>
+                </Menu>
+                  <Menu mnemonicParsing="false" text="Saida de Carga">
+                    <items>
+                      <MenuItem fx:id="menuItemExpedicaoCadastro" mnemonicParsing="false" onAction="#onMenuItemExpedicaoRegisterAction" text="Cadastro" />
+                        <MenuItem fx:id="menuItemExpedicaoConsulta" mnemonicParsing="false" onAction="#onMenuItemExpedicaoQueryAction" text="Consulta" />
+                    </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Relatorio de Táxi">
+                    <items>
+                        <MenuItem fx:id="menuItemTaxiCadastro" mnemonicParsing="false" onAction="#onMenuItemTaxiRegisterAction" text="Cadastrar" />
+                        <MenuItem fx:id="menuItemTaxiConsulta" mnemonicParsing="false" onAction="#onMenuItemTaxiQueryAction" text="Consultar" />
+                    </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Descarregamento de Transferência">
+                    <items>
+                        <MenuItem fx:id="menuItemTransferenciaCadastro" mnemonicParsing="false" onAction="#onMenuItemTransferenciaRegisterAction" text="Cadastrar" />
+                        <MenuItem fx:id="menuItemTransferenciaConsulta" mnemonicParsing="false" onAction="#onMenuItemTransferenciaQueryAction" text="Consultar" />
+                    </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Outros">
+                    <items>
+                        <Menu mnemonicParsing="false" text="Cadastrar">
+                          <items>
+                            <MenuItem mnemonicParsing="false" onAction="#onMenuItemMotoristaAction" text="Motorista" />
+                              <MenuItem mnemonicParsing="false" onAction="#onMenuItemSetorAction" text="Setor" />
+                              <MenuItem mnemonicParsing="false" onAction="#onMenuItemTransportadoraAction" text="Transportadora" />
+                              <MenuItem mnemonicParsing="false" onAction="#onMenuItemFuncionarioAction" text="Funcionario " />
+                              <MenuItem mnemonicParsing="false" onAction="#onMenuItemPorteiroAction" text="Porteiro" />
+                          </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Consultar">
+                           <items>
+                              <MenuItem mnemonicParsing="false" onAction="#onMenuItemMotoristaListAction" text="Motorista" />
+                              <MenuItem mnemonicParsing="false" onAction="#onMenuItemSetorListAction" text="Setor" />
+                              <MenuItem mnemonicParsing="false" onAction="#onMenuItemTransportadoraListAction" text="Transportadora" />
+                              <MenuItem mnemonicParsing="false" onAction="#onMenuItemFuncionarioListAction" text="Funcionario " />
+                              <MenuItem mnemonicParsing="false" onAction="#onMenuItemPorteiroListAction" text="Porteiro" />
+                           </items></Menu>
+                    </items>
+                  </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                     <items>
+                    <MenuItem fx:id="menuItemAbout" mnemonicParsing="false" onAction="#onMenuItemAboutAction" text="About" />
+                     </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </children>
+      </VBox>
+   </content>
+</ScrollPane>

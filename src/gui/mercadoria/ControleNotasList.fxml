@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="255.0" prefWidth="1061.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.mercadoria.ControleNotasListController">
+   <children>
+      <Label text="Controle de Recebimento de  Mercadoria">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <padding>
+            <Insets left="5.0" top="5.0" />
+         </padding>
+      </Label>
+      <ToolBar>
+        <items>
+          <Button fx:id="btNew" mnemonicParsing="false" onAction="#onBtNewAction" text="Novo" />
+        </items>
+      </ToolBar>
+      <TableView fx:id="tableViewControlePor" prefHeight="195.0" prefWidth="1100.0">
+        <columns>
+            <TableColumn fx:id="tableColumnNota" prefWidth="79.0" text="Nota" />
+            <TableColumn fx:id="tableColumnData" text="Data" />
+          <TableColumn fx:id="tableColumnHoraEntrada" prefWidth="60.0" text="Entrada" />
+            <TableColumn fx:id="tableColumnHoraSaida" prefWidth="60.0" text="Saída" />
+            <TableColumn fx:id="tableColumnTransportadora" prefWidth="120.0" text="Transportadora" />
+            <TableColumn fx:id="tableColumnMotorista" prefWidth="110.0" text="Motorista" />
+            <TableColumn fx:id="tableColumnPlaca" minWidth="0.0" text="Placa" />
+            <TableColumn fx:id="tableColumnDestino" text="Destino" />
+            <TableColumn fx:id="tableColumnPorteiro" text="Responsavel" />
+            <TableColumn fx:id="tableColumnEDIT" prefWidth="70.0" />
+            <TableColumn fx:id="tableColumnREMOVE" prefWidth="70.0" />
+        </columns>
+      </TableView>
+   </children>
+</VBox>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="292.0" prefWidth="275.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Taxi.TaxiQueryController">
+   <children>
+      <Label layoutX="59.0" layoutY="14.0" prefHeight="52.0" prefWidth="186.0" text="Consulta">
+         <font>
+            <Font size="42.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="chbTodos" ellipsisString="" layoutX="5.0" layoutY="102.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="109.0" text="todos" textAlignment="RIGHT" />
+      <TextField fx:id="txtData" layoutX="5.0" layoutY="129.0" prefHeight="25.0" prefWidth="77.0" promptText="Data" />
+      <TextField fx:id="txtMatricula" layoutX="5.0" layoutY="163.0" prefHeight="25.0" prefWidth="157.0" promptText="Matricula" />
+      <TextField fx:id="txtSetor" layoutX="5.0" layoutY="198.0" prefHeight="25.0" prefWidth="157.0" promptText="Nome Do Setor" />
+      <ToolBar layoutY="255.0" prefHeight="37.0" prefWidth="294.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <items>
+            <Button fx:id="btConsultar" mnemonicParsing="false" onAction="#onBtConsultaAction" prefHeight="25.0" prefWidth="95.0" text="Consultar" />
+            <Button fx:id="btCancel" mnemonicParsing="false" onAction="#onBtCancelAction" prefHeight="25.0" prefWidth="100.0" text="Cancelar" />
+        </items>
+      </ToolBar>
+      <Label fx:id="labelError" layoutX="14.0" layoutY="230.0" prefHeight="25.0" prefWidth="220.0" textFill="RED">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="chbData" layoutX="94.0" layoutY="133.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="3.0" />
+      <CheckBox fx:id="chbMatricula" layoutX="171.0" layoutY="167.0" mnemonicParsing="false" />
+      <CheckBox fx:id="chbSetor" layoutX="171.0" layoutY="202.0" mnemonicParsing="false" />
+   </children>
+</AnchorPane>
